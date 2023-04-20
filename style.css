@@ -22,6 +22,7 @@ body {
     padding: 0px;
     margin: 0px;
     font-family: "gFont";    
+    background-color: black;
 }
 .col-12 {
     padding: 0px;
@@ -32,17 +33,45 @@ body {
 a {
     text-decoration: none;
 }
+
+/*nav*/
+.masterNav {
+    background-color: rgb(31, 31, 31);
+}
+.nav1 {
+    width: 100%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 64px;
+}
+.nav2{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    color: white;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.nav2 > a {
+    color: white;
+}
+.nav2 > a:hover {
+    color: rgb(255, 94, 0);
+    transition: 0.5s;
+}
+/*nav*/
+
 /*seciton1*/
 
 .section1 {
     width: 100%;
     background-image: url(image/bg.png);
-    padding-top: 50px;
-    padding-bottom: 50px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    margin-bottom: 50px;
     text-align: center;
     justify-content: center;
     display: flex;
@@ -55,8 +84,7 @@ a {
 }
 .section1BoxLeft {
     width: 100%;
-    max-width: 652px;
-    padding-bottom: 10px;
+    max-width: 900px;
     height: fit-content;
     margin-top: auto;
     margin-bottom: auto;
@@ -81,6 +109,7 @@ a {
     animation-duration: 1s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+
 }
 .section1BoxLeftText122 {
     margin-left: auto;
@@ -100,19 +129,22 @@ a {
     }
 }
 .section1BoxRight {
-    text-align: left;
     width: 100%;
     max-width: 800px;
     margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .section1BoxRightBoxing {
-    display: flex;
-    justify-content: space-between;
+    text-align: center;
 }
 .section1BoxRightTitle {
     font-size: 64px;
     font-weight: 700;
     color: orange;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 10px;
     margin-bottom: 10px;
     background-color: rgba(116, 116, 116, 0.555);
@@ -175,8 +207,11 @@ a {
     text-align: center;
     padding-top: 50px;
     padding-bottom: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
-.section2 > img {
+.section2 > div > img {
     width: 100%;
     max-width: 1028px;
 }
@@ -207,7 +242,26 @@ a {
 .section2BoxRightContentTitle {
     margin-bottom: 10px;
 }
-
+@media (max-width: 1200px) {
+    .spa2 {
+        margin-top: 50px;
+    }
+}
+.section22 {
+    background-color: black;
+    text-align: center;
+}
+.section22Box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.section22Box > img {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 /*seciton3*/
 .section3 {
     background-image: url(image/poster.png);
@@ -234,6 +288,11 @@ a {
     font-weight: 700;
     margin-top: 50px;
     color: white;
+}
+.section3Title2 > img {
+    width: 100%;
+    max-width: 800px;
+    padding-top: 25px;
 }
 .section3 > a {
     color: white;
