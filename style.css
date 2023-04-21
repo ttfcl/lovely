@@ -323,6 +323,7 @@ a {
     min-width: 100px;
     max-width: 300px;
     background-color: rgb(48, 48, 48);
+    border: 1px solid white;
     padding: 20px;
     text-align: left;
     word-break: normal;
