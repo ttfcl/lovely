@@ -126,7 +126,7 @@ a {
     width: 100%;
     max-width: 500px;
 }
-.section1BoxLeftText1222 {
+.section1BoxLeftText1222, .section1BoxLeftImg > img {
     width: 100%;
     max-width: 800px;
 }
