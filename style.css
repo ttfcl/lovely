@@ -76,6 +76,9 @@ a {
 .section1 {
     width: 100%;
     background-image: url(image/bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     margin-bottom: 50px;
     text-align: center;
     justify-content: center;
@@ -163,9 +166,10 @@ a {
     width: fit-content;
 }
 .section1BoxRightText{
-    font-size: 18px;
+    font-size: 24px;
     color: white;
     font-weight: 700;
+    background-color: rgba(0, 0, 0, 0.555);
 }
 .section1BoxRightImg {
     display: flex;
@@ -213,6 +217,35 @@ a {
     }
 }
 
+.section12 {
+    display: flex;
+    color: white;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+.section12Text , .section12Img {
+    max-width: 600px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.section12Title {
+    font-size: 32px;
+}
+.section12TextText {
+    font-size: 18px;
+}
+.section12Img > img {
+    width: 100%;
+}
 /*seciton2*/
 .section2 {
     background-color: black;
@@ -226,7 +259,7 @@ a {
 }
 .section2 > div > img {
     width: 100%;
-    max-width: 800px;
+    max-width: 600px;
 }
 .section2BoxLeft > div {
     font-size: 24px;
@@ -267,11 +300,15 @@ a {
 .section22Box {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
     justify-content: space-evenly;
 }
 .section22Box > img {
     width: 100%;
-    max-width: 600px;
+    max-width: 400px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -316,7 +353,7 @@ a {
     justify-content: space-evenly;
     flex-wrap: wrap;
     width: 100%;
-    max-width: 800px;
+    max-width: 600px;
 }
 .reviewBox {
     width: 50%;
